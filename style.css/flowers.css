@@ -1,13 +1,7 @@
 @font-face {
-    font-family: Byekan;
-    src: url("fonts/BYekan.ttf") format("truetype"),
-        url("fonts/IYekan.ttf") format("woff");
-}
-
-@font-face {
     font-family: homa;
-    src: url("fonts/BHoma.ttf") format("truetype"),
-        url("fonts/IHoma.ttf") format("woff");
+    src: url("../fonts/BHoma.ttf") format("truetype"),
+        url("../fonts/IHoma.ttf") format("woff");
 }
 
 * {
@@ -24,20 +18,18 @@ html {
 
 
 body {
-    background-image: url(image/wallpaper/wallpaper.daste.jpg);
+    background-image: url(../image/wallpaper/wallpaper.daste.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 15px 50px;
 }
 
-.header {
-    /*position: sticky;*/
+header {
     top: 15px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-family: 'Mochiy Pop One';
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 15px;
@@ -48,7 +40,7 @@ body {
     backdrop-filter: blur(4px);
 }
 
-.header .logo {
+header .logo {
     display: flex;
     width: 50px;
     height: 50px;
@@ -56,25 +48,26 @@ body {
     box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+    margin: 0px;
 }
 
-.header .nav {
+header nav {
     display: flex;
     flex-direction: column;
 }
 
-.header a {
+header a {
     text-decoration: none;
     margin: 0px 15px;
     color: rgb(155, 27, 48);
     font-size: 16px;
 }
 
-.header .list :hover {
+header list :hover {
     font-size: 20px;
 }
 
-.header button {
+header button {
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 10px;
@@ -85,8 +78,7 @@ body {
     font-family: homa;
 }
 
-
-.main {
+main {
     position: relative;
 }
 
@@ -94,7 +86,7 @@ body {
 
 .box {
     position: relative;
-    width: 100%;
+    width: 31.4%;
     height: 575px;
     margin: 25px 0px;
     display: inline-block;
@@ -106,7 +98,7 @@ body {
     backdrop-filter: blur(4px);
 }
 
-.main :hover {
+main :hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -137,7 +129,7 @@ body {
     margin-left: 25px;
 }
 
-.main .box img {
+main .box img {
     display: inline-block;
     width: 100%;
     height: 390px;
@@ -193,17 +185,4 @@ body {
     backdrop-filter: blur(4px);
     font-family: homa;
     text-align: right;
-}
-
-@media screen and (min-width:768px) {
-    .box {
-        width: 50%;
-    }
-}
-
-
-@media screen and (min-width:922px) {
-    .box {
-        width: 31.4%;
-    }
 }

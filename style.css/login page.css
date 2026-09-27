@@ -4,24 +4,16 @@
     padding: 0px;
 }
 
-
-
-@font-face {
-    font-family: Byekan;
-    src: url("fonts/BYekan.ttf") format("truetype"),
-        url("fonts/IYekan.ttf") format("woff");
-}
-
 @font-face {
     font-family: homa;
-    src: url("fonts/BHoma.ttf") format("truetype"),
-        url("fonts/IHoma.ttf") format("woff");
+    src: url("../fonts/BHoma.ttf") format("truetype"),
+        url("../fonts/IHoma.ttf") format("woff");
 }
 
 
 
 body {
-    background-image: url(image/wallpaper/wallpaper.login\ page.jpg);
+    background-image: url(../image/wallpaper/wallpaper.login\ page.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 15px 50px;

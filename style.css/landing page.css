@@ -1,14 +1,5 @@
 /*font-family: 'Mochiy Pop One'*/
 
-
-
-
-@font-face {
-    font-family: Byekan;
-    src: url("fonts/BYekan.ttf") format("truetype"),
-        url("fonts/IYekan.ttf") format("woff");
-}
-
 @font-face {
     font-family: homa;
     src: url("../fonts/BHoma.ttf") format("truetype"),
