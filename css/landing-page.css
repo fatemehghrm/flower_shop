@@ -81,6 +81,10 @@ header button {
     font-family: homa;
 }
 
+header .rsp{
+    display: none;
+}
+
 main {
     position: relative;
 }
@@ -266,4 +270,252 @@ main .part {
     height: 200px;
     margin: 0px 0px;
     margin-left: 25px;
+}
+
+
+@media screen and (max-width: 775px) {
+
+
+    body {
+        margin: 15px 25px;
+    }
+
+    a {
+        margin: 0px 10px;
+        font-size: 13px;
+    }
+
+
+    header list :hover {
+        font-size: 15px;
+    }
+
+    main a {
+        font-size: 18px;
+    }
+
+    .today {
+        width: 60%;
+        height: 400px;
+        margin: 25px 0px;
+    }
+
+    .logo {
+        width: 40%;
+        height: 400px;
+        margin: 25px 0px;
+        margin-left: 25px;
+        font-family: 'Mochiy Pop One'
+    }
+
+    .welcometext {
+        display: none;
+    }
+
+    main .part2 {
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+
+    .bouquet img,
+    .flowerbox img,
+    .floralmug img,
+    .flowerpot img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .bouquet {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+
+    .flowerbox {
+        margin: 0px;
+        margin-right: 25px;
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 2 / span 1 / span 1;
+    }
+
+
+    .floralmug {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+
+    .flowerpot {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+
+    .questionbox {
+        font-size: 15px;
+    }
+
+    .answer {
+        font-size: 13px;
+    }
+
+    .questions {
+        width: 100%;
+    }
+
+    .questions :hover {
+        font-size: 15px;
+    }
+
+    main .part3 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .aboutus {
+        width: 100%;
+        height: 250px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .social {
+        font-size: 15px;
+    }
+
+    .social a {
+        font-size: 9px;
+    }
+
+    .social :hover {
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width:575px) {
+
+
+    body {
+        margin: 15px 25px;
+    }
+
+
+    header list {
+        display: none;
+    }
+
+    header .rsp {
+        display: flex;
+    }
+
+    header .rsp a {
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+    }
+
+    main .part1 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+        gap: 25px;
+    }
+
+    .today {
+        width: 100%;
+        height: 100%;
+        padding: 5px 15px;
+    }
+
+    .logo {
+        width: 100%;
+        height: 200px;
+        margin: 25px 0px;
+
+    }
+
+    .welcometext {
+        display: none;
+    }
+
+    main .part2 {
+        width: 100%;
+        height: 1700px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px 400px 400px;
+        gap: 25px;
+        margin-bottom: -25px;
+    }
+
+    .bouquet {
+        width: 100%;
+        height: 400px;
+        grid-area: 1 / 1 / span1 /span1;
+        margin-bottom: 25px;
+    }
+
+
+    .flowerbox {
+        width: 100%;
+        height: 400px;
+        grid-area: 2 / 1 / span1 /span1;
+        margin: 0px;
+    }
+
+
+    .floramug {
+        width: 100%;
+        height: 400px;
+        grid-area: 3 / 1 / span1 /span1;
+        margin: 0px;
+    }
+
+
+    .flowerpot {
+        width: 100%;
+        height: 400px;
+        grid-area: 4 / 1 / span1 /span1;
+        margin: 0px;
+    }
+
+    .questions {
+        height: 550px;
+    }
+
+    main .part4 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 220px 300px;
+        gap: 25px;
+    }
+
+    .socialmedia {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+
+    .address {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
 }
