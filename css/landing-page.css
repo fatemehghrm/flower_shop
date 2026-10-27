@@ -162,6 +162,7 @@ main .part {
     height: 400px;
     margin: 0px;
 }
+
 .today img,
 .bouquet img,
 .flowerbox img,
@@ -290,23 +291,25 @@ main .part {
         margin: auto;
     }
 
-    .part1 {
-        flex-direction: column-reverse;
-    }
-
-    
 
     .questions {
         height: auto;
         font-size: 12px;
     }
 
-    .questions  :hover {
+    .questions :hover {
         font-size: 15px;
     }
 
     .logo {
         height: 200px;
+    }
+
+
+    .flowerbox,
+    .floralmug,
+    .flowerpot {
+        height: 500px;
     }
 
     .col-xs-12 {
@@ -318,4 +321,59 @@ main .part {
 
 
 /*small*/
-@media screen and (min-width:576px) {}
+@media screen and (min-width: 576px) {
+
+    header {
+        max-height: 65px;
+    }
+
+
+    a {
+        font-size: 12px;
+    }
+
+    header list :hover {
+        font-size: 15px;
+    }
+
+    header button{
+        width: 90px;
+    }
+
+    .part {
+        gap: 20px;
+    }
+
+    .floralmug,
+    .flowerpot {
+        height: 500px;
+    }
+
+    
+    .questions {
+        height: auto;
+        font-size: 12px;
+    }
+
+    .questions :hover {
+        font-size: 15px;
+    }
+
+    .aboutus{
+        height:520px ;
+    }
+
+
+    .col-sm-6 {
+        width: 48%;
+        margin-top: 20px;
+    }
+
+
+    .col-sm-12 {
+        width: 100%;
+        margin-top: 20px;
+        height: 250px;
+    }
+}
+
