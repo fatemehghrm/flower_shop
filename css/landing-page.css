@@ -162,14 +162,14 @@ main .part {
     height: 400px;
     margin: 0px;
 }
-
+.today img,
 .bouquet img,
 .flowerbox img,
 .floralmug img,
 .flowerpot img {
     display: inline-block;
     width: 100%;
-    height: 330px;
+    height: 90%;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 15px;
@@ -294,9 +294,7 @@ main .part {
         flex-direction: column-reverse;
     }
 
-    img{
-        height: auto;
-    }
+    
 
     .questions {
         height: auto;
