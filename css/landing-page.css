@@ -24,8 +24,8 @@ body {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 15px 5%;
     font-family: homa;
+
 }
 
 header {
@@ -62,11 +62,6 @@ a {
     text-decoration: none;
     margin: 0px 7px;
     color: rgb(70, 15, 15);
-    font-size: 16px;
-}
-
-header list :hover {
-    font-size: 20px;
 }
 
 header button {
@@ -76,7 +71,6 @@ header button {
     background-color: rgba(255, 255, 255, 0.1);
     font-family: 'Mochiy Pop One';
     height: 50px;
-    width: 120px;
     font-family: homa;
 }
 
@@ -84,18 +78,8 @@ header .rsp {
     display: none;
 }
 
-main {
-    position: relative;
-}
-
-
-main .part {
-    display: flex;
-}
-
 
 .box {
-    display: inline-block;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 15px;
@@ -121,14 +105,11 @@ main .part {
 
 
 .today {
-    width: 26%;
     height: 400px;
     margin: 0px;
 }
 
 .today img {
-    height: 330px;
-    display: inline-block;
     height: 330px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
@@ -139,7 +120,6 @@ main .part {
 
 
 .logo {
-    width: 24%;
     height: 400px;
     margin: 0px;
     font-family: 'Mochiy Pop One'
@@ -149,7 +129,6 @@ main .part {
 
 
 .welcometext {
-    width: 60%;
     height: 400px;
     margin: 0px;
     font-family: 'Mochiy Pop One'
@@ -158,7 +137,6 @@ main .part {
 
 
 .bouquet {
-    width: 25%;
     height: 400px;
     margin: 0px;
 }
@@ -179,7 +157,6 @@ main .part {
 
 
 .flowerbox {
-    width: 25%;
     height: 400px;
     margin: 0px;
 
@@ -187,21 +164,18 @@ main .part {
 
 
 .floralmug {
-    width: 25%;
     height: 400px;
     margin: 0px;
 }
 
 
 .flowerpot {
-    width: 25%;
     height: 400px;
     margin: 0px;
 }
 
 
 .questions {
-    width: 65%;
     height: auto;
     margin: 0px;
     display: flex;
@@ -233,14 +207,12 @@ main .part {
 
 
 .aboutus {
-    width: 35%;
     height: 475px;
     margin: 0px;
 
 }
 
 .socialmedia {
-    width: 40%;
     height: 200px;
     margin: 0px;
     font-family: 'Mochiy Pop One';
@@ -264,7 +236,6 @@ main .part {
 
 
 .address {
-    width: 60%;
     height: 200px;
     margin: 0px;
 }
@@ -278,6 +249,10 @@ main .part {
 
 /*extra small*/
 @media screen and (max-width: 576px) {
+
+    body {
+        margin: 15px 5%;
+    }
 
     header list {
         display: none;
@@ -323,6 +298,10 @@ main .part {
 /*small*/
 @media screen and (min-width: 576px) {
 
+    body {
+        margin: 15px 5%;
+    }
+
     header {
         max-height: 65px;
     }
@@ -336,7 +315,7 @@ main .part {
         font-size: 15px;
     }
 
-    header button{
+    header button {
         width: 90px;
     }
 
@@ -349,7 +328,7 @@ main .part {
         height: 500px;
     }
 
-    
+
     .questions {
         height: auto;
         font-size: 12px;
@@ -359,8 +338,8 @@ main .part {
         font-size: 15px;
     }
 
-    .aboutus{
-        height:520px ;
+    .aboutus {
+        height: 520px;
     }
 
 
@@ -377,3 +356,62 @@ main .part {
     }
 }
 
+@media screen and (min-width:768px) {
+    body {
+        max-width: 1000px;
+        margin: 15px auto;
+    }
+
+
+    a {
+        font-size: 16px;
+    }
+
+    header list :hover {
+        font-size: 20px;
+    }
+
+    header button {
+        width: 120px;
+    }
+
+    .welcometext {
+        height: 400px;
+    }
+
+    .floralmug,
+    .flowerpot {
+        height: 400px;
+    }
+
+    .questions {
+        font-size: 18px;
+        width: auto;
+    }
+
+    
+    .questions :hover {
+        font-size: 18px;
+    }
+
+    .questionbox {
+        font-size: 15px;
+    }
+
+
+    .col-md-3 {
+        width: 23.3%;
+    }
+
+    .col-md-4 {
+        width: 31.8%;
+    }
+
+    .col-md-6 {
+        width: 49%;
+    }
+
+    .col-md-8 {
+        width: 66.2%;
+    }
+}
