@@ -11,44 +11,38 @@
 }
 
 
+
 body {
-    background-image: url(../image/wallpaper/wallpaper.singup\ page.jpg);
+    background-image: url(../image/wallpaper/wallpaper-loginpage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 15px 50px;
 }
 
-.background {
+
+.form {
     position: absolute;
-    display: flex;
-    width: 60%;
-    height: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(57, 12, 19, 0.6);
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.form {
-    width: 40%;
-    height: 370px;
-    margin: 15px;
     padding: 5px 25px;
+    height: 375px;
     font-family: homa;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(57, 12, 19, 0.6);
+    box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: rgb(95, 20, 35);
+    color: rgb(55, 10, 10);
+    display: inline-block;
 }
 
 .form h1 {
     text-align: center;
-    margin: 15px;
     font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
 }
 
 
@@ -60,19 +54,19 @@ body {
     margin: 10px 0px;
     padding: 0px 20px;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(57, 12, 19, 0.6);
+    box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 5px;
-    background-color: rgba(95, 20, 35, 0.9);
-    font-weight: bold;
+    background-color: rgba(250, 190, 5, 0.7);
+      font-weight: bold;
     font-family: 'Mochiy Pop One';
 }
 
 
 .form button {
     border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(57, 12, 19, 0.6);
+    box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
     border-radius: 5px;
-    background-color: rgba(95, 20, 35, 0.8);
+    background-color: rgba(250, 190, 5, 0.5);
     height: 40px;
     width: 100%;
 }
@@ -90,21 +84,35 @@ body {
     text-decoration: none;
     margin: 0px 15px;
     font-size: 16px;
-    color: rgb(95, 20, 35);
+    color: rgb(55, 10, 10);
 }
 
 
-.text {
-    width: 50%;
-    height: 370px;
-    margin: 15px;
-    padding: 5px 25px;
-    font-family: homa;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(2, 2, 4, 0.6);
-    border-radius: 10px;
-    background-color: rgba(95, 20, 35, 0.9);
-    color: rgb(62, 12, 22);
-    display: inline-block;
-    font-family: homa;
+
+
+/*extra small*/
+@media screen and (max-width:576px) {
+   
+
+    .form {
+        width: 80%;
+    }
+
+}
+
+/*small*/
+@media screen and (min-width:576px) {
+  
+
+    .form {
+        width: 50%;
+    }
+}
+
+
+/*medium*/
+@media screen and (min-width:768px) {
+    .form {
+        width: 25%;
+    }
 }
