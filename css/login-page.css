@@ -13,10 +13,11 @@
 
 
 body {
-    background-image: url(../image/wallpaper/wallpaper.login\ page.jpg);
+    /* background-image: url(../image/wallpaper/wallpaper.login\ page.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     margin: 15px 50px;
+    background-color: rgb(253, 217, 11);
 }
 
 .background {
@@ -107,4 +108,15 @@ body {
     color: rgb(55, 10, 10);
     display: inline-block;
     font-family: homa;
+}
+
+@media screen and (max-width:576px) {
+    .text {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+
 }
